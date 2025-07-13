@@ -1,0 +1,9 @@
+[default]
+address = "127.0.0.1"
+port = 8761
+secret_key = "CNEIsU0nV7X6FmjTth7hSe4n8uRC5LxA"
+
+[release]
+address = "0.0.0.0"
+port = 3336
+secret_key = "wxtZP8Q93Jm7Ly6UGs4A2VfjHR5rS9oE"
