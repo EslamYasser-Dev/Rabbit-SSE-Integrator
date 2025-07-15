@@ -1,9 +1,9 @@
 use crate::app::{domain::PushNotification, ports::NotificationPublisherPort};
 use rocket::response::stream::{Event, EventStream};
 // use rocket::serde::json::Json;
-use rocket::{get, routes, Shutdown, State};
+use rocket::{Shutdown, State, get, routes};
 use std::sync::Mutex;
-use tokio::sync::broadcast::{Sender};
+use tokio::sync::broadcast::Sender;
 
 pub struct SsePublisher {
     tx: Sender<PushNotification>,
@@ -22,7 +22,7 @@ impl NotificationPublisherPort for SsePublisher {
     }
 }
 
-#[get("/events")]
+#[get("/events/sse")]
 pub async fn sse_endpoint(
     queue: &State<Mutex<Sender<PushNotification>>>,
     mut end: Shutdown,

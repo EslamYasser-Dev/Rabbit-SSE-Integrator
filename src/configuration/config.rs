@@ -1,4 +1,4 @@
-struct Config {
+pub struct Config {
     address: String,
     port: u16,
     secret_key: String,
