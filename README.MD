@@ -1,6 +1,6 @@
 # Rabbit-SSE-Integrator
 
-[![Build Status](https://github.com/EslamYasser-Dev/Rabbit-SSE-Integrator/actions/workflows/build.yml/badge.svg)](https://github.com/EslamYasser-Dev/Rabbit-SSE-Integrator/actions/workflows/build.yml)
+[![Build Status](https://github.com/EslamYasser-Dev/Rabbit-SSE-Integrator/actions/workflows/ci.yml/badge.svg)](https://github.com/EslamYasser-Dev/Rabbit-SSE-Integrator/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/EslamYasser-Dev/Rabbit-SSE-Integrator)](LICENSE)
 
 > High-performance connector to stream messages from RabbitMQ to clients using Server-Sent Events (SSE).
